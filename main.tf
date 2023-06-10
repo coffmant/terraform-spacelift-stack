@@ -6,6 +6,7 @@ resource "spacelift_stack" "this" {
   description          = var.description
   terraform_version    = var.terraform_version
   enable_local_preview = var.enable_local_preview
+  space_id             = var.space_id
   worker_pool_id       = var.worker_pool_id
   administrative       = var.administrative
   autodeploy           = var.autodeploy
