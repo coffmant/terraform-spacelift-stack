@@ -41,6 +41,12 @@ variable "enable_local_preview" {
   default     = false
 }
 
+variable "space_id" {
+  type        = string
+  description = "The ID of the space to use for your Spacelift stack."
+  default     = "legacy"
+}
+
 variable "worker_pool_id" {
   type        = string
   description = "The ID of the worker pool to use for Spacelift stack runs."
